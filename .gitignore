@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Database & Uploads
+*.db
+*.sqlite3
+uploads/originals/*
+uploads/thumbnails/*
+uploads/covers/*
+uploads/qrcodes/*
+uploads/temp/*
+!uploads/*/.gitkeep
+
+# Environment & IDE
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log

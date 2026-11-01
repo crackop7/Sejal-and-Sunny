@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wedsnap:
+    build: .
+    container_name: wedsnap_app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - PUBLIC_BASE_URL=https://your-domain.com
+      - JWT_SECRET=wedsnap_super_secret_production_key_change_me
+    volumes:
+      - ./wedsnap.db:/app/wedsnap.db
+      - ./uploads:/app/uploads
